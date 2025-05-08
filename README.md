@@ -65,7 +65,7 @@ Frontend Setup (React with TypeScript)
 
 How to Use
 1. Upload a Document:
-   - Navigate to http://localhost:3000 in your browser.
+   - Navigate to http://localhost:5173 in your browser.
    - Use the file input to upload a PDF document.
    - Click the Upload button to send the file to the backend for processing.
 
