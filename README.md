@@ -2,6 +2,14 @@ Document Processing App
 
 This application processes documents by extracting data from PDFs, matches extracted items with a predefined set, and stores the results in a PostgreSQL database. It consists of two main parts: a Flask backend and a React (TypeScript) frontend.
 
+Why this tech stack:
+- **React with TypeScript**: React is a widely used, component-based frontend library that offers excellent developer tools and community support. TypeScript adds static typing, which improves code quality and reduces runtime errors—especially useful for larger or more dynamic applications like this one where data flows between components and APIs.
+
+- **Flask (Python)**: Flask is lightweight and easy to set up for API-based services. Since the extraction and matching APIs already use JSON, Flask makes it simple to orchestrate these calls and manage business logic. It also integrates well with PostgreSQL using `psycopg2`.
+
+- **PostgreSQL**: PostgreSQL is a powerful, open-source relational database system. It's well-suited for structured data like matched line items and supports robust SQL querying, transactions, and indexing, which are helpful for potential scaling.
+
+
 Features
 - Upload PDF files: Users can upload a PDF document, which is processed to extract item data.
 - API Integration: Data is extracted via an external API, and item matches are found through another external API.
