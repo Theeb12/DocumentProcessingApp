@@ -45,10 +45,12 @@ def upload():
     headers = {'accept': 'application/json', 'Content-Type': 'application/json'}
     response = requests.post(MATCHING_API, json=payload, headers=headers)
     matched_data = response.json()
-    #print("Matched data:", matched_data)
+    print("Matched data:", matched_data)
+    final_items = []
+    for item in matched_data['results'].values():
+        final_items.append(item[0]['match'])
 
-    final_items = list(matched_data['results'].keys())
-
+    print("Final items:", final_items)
     # Save matched data to the database
     for item in final_items:
         cursor.execute(

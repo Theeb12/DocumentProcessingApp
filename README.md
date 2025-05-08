@@ -6,6 +6,7 @@ Features
 - Upload PDF files: Users can upload a PDF document, which is processed to extract item data.
 - API Integration: Data is extracted via an external API, and item matches are found through another external API.
 - Database Storage: The matched items are stored in a PostgreSQL database.
+- Manual Adjusting: Users can manually input or remove items from the database using the PSQL shell
 - View Matches: After uploading the document, users can view the matched items on the frontend.
 
 Technologies Used
