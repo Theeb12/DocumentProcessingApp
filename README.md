@@ -52,7 +52,7 @@ Frontend Setup (React with TypeScript)
    - Rename the files in the src directory from .js to .tsx.
 4. Start the React development server:
    npm run dev
-   The frontend will be running on http://localhost:3000.
+   The frontend will be running on http://localhost:5173.
 
 How to Use
 1. Upload a Document:
